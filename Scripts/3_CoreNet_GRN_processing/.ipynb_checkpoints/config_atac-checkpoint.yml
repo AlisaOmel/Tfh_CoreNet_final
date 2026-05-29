@@ -1,0 +1,3 @@
+input: "mod_input_atac.yml"
+output_dir: "output_atac/"
+assembly: 'GRCh38'

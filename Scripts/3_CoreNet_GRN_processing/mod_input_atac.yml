@@ -1,0 +1,176 @@
+ATAC-seq:
+  - id: ATAC_naive
+    group: Naive
+    replicates:
+      - rep: 1
+        files:
+          - path: 'naive_1.bed'
+          - path: 'naive_1.narrowPeak'
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: 'naive_2.bed'
+          - path: 'naive_2.narrowPeak'
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: 'naive_3.bed'
+          - path: 'naive_3.narrowPeak'
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: 'naive_4.bed'
+          - path: 'naive_4.narrowPeak'
+            format: NarrowPeak
+
+  - id: ATAC_CXCR5pos_PD1neg
+    group: Early_Pre_TFH
+    replicates:
+      - rep: 1
+        files:
+          - path: 'CXCR5pos_PD1neg_5.bed'
+          - path: 'CXCR5pos_PD1neg_5.narrowPeak'
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: 'CXCR5pos_PD1neg_6.bed'
+          - path: 'CXCR5pos_PD1neg_6.narrowPeak'
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: 'CXCR5pos_PD1neg_7.bed'
+          - path: 'CXCR5pos_PD1neg_7.narrowPeak'
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: 'CXCR5pos_PD1neg_8.bed'
+          - path: 'CXCR5pos_PD1neg_8.narrowPeak'
+            format: NarrowPeak
+
+  - id: ATAC_CXCR5pos_PD1int
+    group: Late_Pre_TFH
+    replicates:
+      - rep: 1
+        files:
+          - path: 'CXCR5pos_PD1int_9.bed'
+          - path: 'CXCR5pos_PD1int_9.narrowPeak'
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: 'CXCR5pos_PD1int_10.bed'
+          - path: 'CXCR5pos_PD1int_10.narrowPeak'
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: 'CXCR5pos_PD1int_11.bed'
+          - path: 'CXCR5pos_PD1int_11.narrowPeak'
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: 'CXCR5pos_PD1int_12.bed'
+          - path: 'CXCR5pos_PD1int_12.narrowPeak'
+            format: NarrowPeak
+  
+  - id: ATAC_CXCR5hi_PD1hi
+    group: GC
+    replicates:
+      - rep: 1
+        files:
+          - path: 'CXCR5hi_PD1hi_13.bed'
+          - path: 'CXCR5hi_PD1hi_13.narrowPeak'
+            format: NarrowPeak
+      - rep: 2
+        files:
+          - path: 'CXCR5hi_PD1hi_14.bed'
+          - path: 'CXCR5hi_PD1hi_14.narrowPeak'
+            format: NarrowPeak
+      - rep: 3
+        files:
+          - path: 'CXCR5hi_PD1hi_15.bed'
+          - path: 'CXCR5hi_PD1hi_15.narrowPeak'
+            format: NarrowPeak
+      - rep: 4
+        files:
+          - path: 'CXCR5hi_PD1hi_16.bed'
+          - path: 'CXCR5hi_PD1hi_16.narrowPeak'
+            format: NarrowPeak
+RNA-seq:
+  - id: RNA_Naive
+    group: Naive
+    replicates:
+      - rep: 1
+        files:
+          - path: 'Naive_1.tsv'
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: 'Naive_2.tsv'
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: 'Naive_3.tsv'
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: 'Naive_4.tsv'
+            tags: ['GeneQuant']
+  
+  - id: RNA_Early_Pre_TFH
+    group: Early_Pre_TFH
+    replicates:
+      - rep: 1
+        files:
+          - path: 'Early_Pre-TFH_1.tsv'
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: 'Early_Pre-TFH_2.tsv'
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: 'Early_Pre-TFH_3.tsv'
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: 'Early_Pre-TFH_4.tsv'
+            tags: ['GeneQuant']
+
+  - id: RNA_Late_Pre_TFH
+    group: Late_Pre_TFH
+    replicates:
+      - rep: 1
+        files:
+          - path: 'Late_Pre-TFH_1.tsv'
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: 'Late_Pre-TFH_2.tsv'
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: 'Late_Pre-TFH_3.tsv'
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: 'Late_Pre-TFH_4.tsv'
+            tags: ['GeneQuant']
+
+  - id: RNA_GC
+    group: GC
+    replicates:
+      - rep: 1
+        files:
+          - path: 'GC_1.tsv'
+            tags: ['GeneQuant']
+      - rep: 2
+        files:
+          - path: 'GC_2.tsv'
+            tags: ['GeneQuant']
+      - rep: 3
+        files:
+          - path: 'GC_3.tsv'
+            tags: ['GeneQuant']
+      - rep: 4
+        files:
+          - path: 'GC_4.tsv'
+            tags: ['GeneQuant']
