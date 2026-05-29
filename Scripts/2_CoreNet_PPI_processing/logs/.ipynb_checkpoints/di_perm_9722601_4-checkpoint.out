@@ -1,0 +1,14 @@
+JobID:        9722601
+ArrayJobID:   9722601
+ArrayTaskID:  4
+Node:         htc-n73.crc.pitt.edu
+Started:      Wed May 27 11:16:28 PM EDT 2026
+Working dir:  /ix/djishnu/Alisa/Tfh/Tfh_CoreNet_final/Scripts/2_CoreNet_PPI_processing
+------------------------------------------------------------
+Set:          CoreNet_PPI  (array idx 4)
+Prefix:       CoreNet_PPI
+Output dir:   ../Figure2/outputs/upset_plot_overlaps/CoreNet_PPI
+------------------------------------------------------------
+Command:
+  python first_degree_interactors_pipeline.py --sig_genes ../../Data/PPS_1_significant_gene_list.csv --gene_col Genes --prefix CoreNet_PPI --hint_h5 /ix/djishnu/Alisa/Tfh/Network_analysis/data/HomoSapiens_binary_co_complex_Feb2023_1_ppr_0.4.h5 --all_hint_genes ../../Data/all_hint_genes_list.pkl --vinuesa ../../Data/literature_sets/vinuesa_list.csv --hart ../../Data/literature_sets/TFH_review_list.csv --crotty ../../Data/literature_sets/crotty_list.csv --output_dir ../Figure2/outputs/upset_plot_overlaps/CoreNet_PPI --num_perm 1000 --mode all --save_formats csv --seed 42 --save_di --save_cytoscape --cytoscape_variant cytoscape --gold_standard ../../Data/literature_sets/vinuesa_list.csv
+------------------------------------------------------------

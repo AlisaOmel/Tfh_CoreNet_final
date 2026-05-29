@@ -1,0 +1,14 @@
+JobID:        9722602
+ArrayJobID:   9722601
+ArrayTaskID:  0
+Node:         htc-n25.crc.pitt.edu
+Started:      Wed May 27 11:16:22 PM EDT 2026
+Working dir:  /ix/djishnu/Alisa/Tfh/Tfh_CoreNet_final/Scripts/2_CoreNet_PPI_processing
+------------------------------------------------------------
+Set:          PPS_noprop  (array idx 0)
+Prefix:       PPS_noprop_184
+Output dir:   ../Figure2/outputs/upset_plot_overlaps/PPS_noprop
+------------------------------------------------------------
+Command:
+  python first_degree_interactors_pipeline.py --sig_genes ../../Data/EBSeq_Genes_top184.csv --gene_col Gene --prefix PPS_noprop_184 --hint_h5 /ix/djishnu/Alisa/Tfh/Network_analysis/data/HomoSapiens_binary_co_complex_Feb2023_1_ppr_0.4.h5 --all_hint_genes ../../Data/all_hint_genes_list.pkl --vinuesa ../../Data/literature_sets/vinuesa_list.csv --hart ../../Data/literature_sets/TFH_review_list.csv --crotty ../../Data/literature_sets/crotty_list.csv --output_dir ../Figure2/outputs/upset_plot_overlaps/PPS_noprop --num_perm 1000 --mode all --save_formats csv --seed 42 --save_di --save_cytoscape --cytoscape_variant cytoscape --gold_standard ../../Data/literature_sets/vinuesa_list.csv
+------------------------------------------------------------
