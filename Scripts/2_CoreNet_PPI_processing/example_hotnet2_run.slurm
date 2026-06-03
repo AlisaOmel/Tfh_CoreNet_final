@@ -19,5 +19,5 @@ python ./HotNet2.py \
 -hf  ../../Data/EBSeq_Genes_Scores.txt \
 -np 500 \
 -hp 500 \
--o ../../Sample_outputs/PPI_network \
+-o PPI_network \
 -c  $num_cores
