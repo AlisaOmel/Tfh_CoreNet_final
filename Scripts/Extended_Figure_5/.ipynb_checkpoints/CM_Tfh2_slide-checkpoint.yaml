@@ -1,0 +1,19 @@
+x_path: ../../Data/SLIDE/CM-Pre-non-Tfh_vs_Tfh2_multiome_top2000_sorted_nocyclT_x.csv
+y_path: ../../Data/SLIDE/CM-Pre-non-Tfh_vs_Tfh2_multiome_SEACell_sorted_nocyclT_y.csv
+out_path: slide_output
+delta:
+  - 0.05
+lambda:
+  - 2
+spec: 0.1
+y_factor: TRUE
+y_levels:
+  - 0
+  - 1
+eval_type: auc
+SLIDE_iter: 1000
+SLIDE_top_feats: 10
+sampleCV_iter: 500
+sampleCV_K: 4
+do_interacts: FALSE
+fdr: 0.1
