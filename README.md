@@ -127,17 +127,6 @@ tfh_corenet/
 
 ### `first_degree_interactors_pipeline.py`
 
-#### `sig_set_nodot(gene_set, set_name, output_dir, save, taiji)`
-
-Reads a gene list from a CSV file and strips Ensembl version suffixes (`.` notation).
-
-- `gene_set` — path to CSV containing gene names
-- `taiji` — if `'True'`, reads from a `'Genes'` column (Taiji format); otherwise reads column headers
-
-Returns a deduplicated list of gene names.
-
----
-
 #### `first_degree_interactors(sig_genes, hint_data, output_dir, set_name, save, save_formats)`
 
 Queries the HINT PPI network for all direct interactors of the input significant gene set.
@@ -166,15 +155,13 @@ Three permutation strategies assess whether the observed overlap between CoreNet
 
 #### `filter_GeneRanks(generank_dir, output_dir, experiment)`
 
-Loads Taiji GeneRank and p-value TSVs for a given experiment, renames cell-state columns to standardized TFH nomenclature, and filters to genes with p < 0.01 across all states.
+Loads Taiji GeneRank and p-value TSVs for a given experiment and filters to genes with p < 0.01 across all states.
 
 ---
 
 #### `rank_TFs(analysis, experiment_list)`
 
-Rank-transforms filtered GeneRank scores within each TFH cell state. The top-ranked gene receives a score of 10⁻⁴; all others are ranked 1–N and normalized to [0, 1].
-
----
+Rank-transforms filtered GeneRank scores within each TFH cell state.
 
 #### `get_top_genes(experiment_list, top_num, exclude_znf)`
 
@@ -184,7 +171,7 @@ Selects the top `top_num` genes by minimum rank across all experiments and cell 
 
 ### `process_RNA_and_logFC.ipynb`
 
-Reads normalized bulk RNA-seq counts, computes per-state means across replicates (Naive, Early Pre-TFH, Late Pre-TFH, GC TFH), and calculates log2 fold-change (GC vs Early Pre-TFH; GC vs Late Pre-TFH). Values are clipped to ±2 for a thresholded version used in downstream UpSet analyses.
+Reads normalized bulk RNA-seq counts, computes per-state means across replicates (Naive, Early Pre-TFH, Late Pre-TFH, GC TFH), and calculates log2 fold-change (GC vs Early Pre-TFH; GC vs Late Pre-TFH). 
 
 ---
 
