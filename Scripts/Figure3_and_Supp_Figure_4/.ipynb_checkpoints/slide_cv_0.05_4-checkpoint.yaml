@@ -1,0 +1,19 @@
+x_path: ../../Data/SLIDE/Tfh_vs_CM_Pre-Tfh_by_patient_expression_top2000_seacells_x.csv 
+y_path: ../../Data/SLIDE/Tfh_vs_CM_Pre-Tfh_by_patient_expression_seacells_y.csv
+out_path: outputs
+delta:
+  - 0.05
+lambda:
+  - 4
+spec: 0.1
+y_factor: TRUE
+y_levels:
+  - 0
+  - 1
+eval_type: auc
+SLIDE_iter: 1000
+SLIDE_top_feats: 10
+sampleCV_iter: 500
+sampleCV_K: 4
+do_interacts: TRUE
+fdr: 0.1
