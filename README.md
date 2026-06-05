@@ -22,7 +22,9 @@ The dataset has 2 components:
 - **CoreNet (GRN)** — Constructs a gene regulatory network using Taiji (ATAC-seq and CUT&RUN-derived transcription factor rankings) filtered by significance across TFH differentiation stages.
 
 
-Validation is performed across human tonsil spatial transcriptomics, mouse scRNA-seq, CITE-seq tonsil atlas data, and MSigDB gene set enrichment analyses (ssGSEA).
+Validation is performed across PWHIV gut biopsy scRNA, human tonsil spatial transcriptomics, mouse allergy LN scRNA-seq and spatial transcriptomics, CITE-seq tonsil atlas data, and MSigDB gene set enrichment analyses (ssGSEA).
+
+CoreNet can be visualized and on our webserver: https://pitt-csi.shinyapps.io/tfhcorenet/
 
 ---
 
