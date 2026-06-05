@@ -8,12 +8,12 @@ vinuesa <- as.list(vinuesa_df$'Genes')
 tfh_review <- as.list(tfh_review_df$'Genes')
 
 #Significant Genes
-corenet_ext_df <- read.csv('/ix/djishnu/Alisa/Tfh/ForPaper/Resubmission/lowering_threshold/corenet_extended_full_genes.csv')
+corenet_ext_df <- read.csv('../../Data/corenet_extended_full_genes.csv')
 corenet_ext <- as.list(corenet_ext_df$'Genes')
 
 
 #Random Gene Overlaps
-corenet_ext_random_df <- read.csv("/ix3/djishnu/Alisa/Tfh/upsetplot_randoms/corenet_extended_random_upset_human_nofd.csv")
+corenet_ext_random_df <- read.csv("../../Data/corenet_extended_random_upset_human_nofd.csv")
 corenet_ext_random <- as.list(corenet_ext_random_df$'Genes')
 
 

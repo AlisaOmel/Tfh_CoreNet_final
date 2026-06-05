@@ -13,8 +13,8 @@ plot_1
 plot_2 <- DimPlot(Tfh_Tfh2_subset, reduction = "umap", group.by = "Tfh_final", label = TRUE, cols = c("red", "blue"))
 plot_2
 
-slide_boxplot_CM <- readRDS('Extended_Figure_5/slide_output/CM_Tfh2_SLIDECV_boxplot_data.rds')
-write.csv(slide_boxplot_CM, "Extended_Figure_5/CM_slide_boxplot_aucs.csv", row.names = FALSE)
+slide_boxplot_CM <- readRDS('slide_output/CM_Tfh2_SLIDECV_boxplot_data.rds')
+write.csv(slide_boxplot_CM, "CM_slide_boxplot_aucs.csv", row.names = FALSE)
 
 mean_auc_CM <- aggregate(auc ~ method, data = slide_boxplot_CM, FUN = mean)
 wilcox_result_CM <- wilcox.test(auc ~ method, data = slide_boxplot_CM)
