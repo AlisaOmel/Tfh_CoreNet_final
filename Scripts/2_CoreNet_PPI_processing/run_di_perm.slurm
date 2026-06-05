@@ -108,8 +108,8 @@ PREFIXES=(
 )
 
 # CoreNet (index 2) is built as the union of these two:
-CORENET_PPI_INPUT="/ix/djishnu/Alisa/Tfh/testing_for_github/Data/PPS_1_significant_gene_list.csv"
-CORENET_GRN_INPUT="/ix/djishnu/Alisa/Tfh/testing_for_github/Data/final_genes_all_sets_152.csv"
+CORENET_PPI_INPUT="../../Data/PPS_1_significant_gene_list.csv"
+CORENET_GRN_INPUT="../../Data/GRN_genes_all_sets_152.csv"
 
 # --- pick the set for this array task ---------------------------------
 IDX="${SLURM_ARRAY_TASK_ID:-0}"
