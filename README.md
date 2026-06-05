@@ -51,19 +51,9 @@ tfh_corenet/
 │   ├── taiji_score_propagation_genes.csv
 │   ├── union_propagation_genes.csv
 │   ├── literature_sets/                     # Published gene sets
-│   │   ├── crotty_list.csv
-│   │   ├── dalit_coreTFH_genes.csv
-│   │   ├── dalit_coreTFR_genes.csv
-│   │   ├── TFH_review_list.csv
-│   │   └── vinuesa_list.csv
 │   ├── SLIDE/                                #SLIDE inputs
 │   ├── Taiji_outputs/                       # Processed Taiji GeneRank and ranked outputs
 │   └── upset_plot_overlaps/                 # Permutation results for CoreNet, GRN, PPI, logFC, PPS
-│       ├── CoreNet/
-│       ├── CoreNet_GRN/
-│       ├── CoreNet_PPI/
-│       ├── logFC/
-│       └── PPS_noprop/
 └── Scripts/
     ├── 1_bulkRNA_processing/
     │   └── process_RNA_and_logFC.ipynb       # Normalize bulk RNA-seq; compute log2FC between TFH states
